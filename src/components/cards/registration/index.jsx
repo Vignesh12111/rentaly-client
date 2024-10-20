@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { Formik, Form, ErrorMessage, Field } from 'formik';
 import * as Yup from 'yup';
@@ -13,8 +13,6 @@ import signUpFieldsData from '../../../data/inputs/signup'
 import { logIn, signUp } from '../../../api/users';
 
 export default function RegistrationForm({ type }) {
-    const navigate = useNavigate();
-
     const login = type === 'login';
 
     const signupValidationSchema = Yup.object({
