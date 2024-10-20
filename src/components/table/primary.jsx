@@ -31,7 +31,7 @@ function PrimaryTable({ data, onEdit }) {
                                     {schedule?.scheduledDate?.replace("T", " ")?.replace(".000Z", "")}
                                 </td>
                                 <td className="px-6 py-4">
-                                    <p className={`bg-orange-400 rounded px-3 py-2 font-medium inline text-white ${schedule?.status=='confirmed' && 'bg-green-500'} ${schedule?.status=='cancelled' && 'bg-red-500'}`}>
+                                    <p className={`bg-orange-400 rounded px-3 py-2 font-medium inline text-white ${schedule?.status==='confirmed' && 'bg-green-500'} ${schedule?.status==='cancelled' && 'bg-red-500'}`}>
                                     {schedule?.status}
                                     </p>
                                 </td>
